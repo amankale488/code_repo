@@ -1,0 +1,5 @@
+SELECT department, COUNT(*) AS emp_count
+FROM employees
+WHERE city = 'Delhi'
+GROUP BY department
+HAVING COUNT(*) > 1;
